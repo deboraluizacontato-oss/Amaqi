@@ -293,6 +293,7 @@ img {
     border-color: #7C4608;
 }
 
+/* Botão Enviar Formulário */
 .btn-submit {
     background-color: #5F3806;
     color: #FFFFFF;
@@ -339,37 +340,7 @@ footer .social-icons a:hover {
     color: #FFFFFF;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .about-grid {
-        flex-direction: column;
-    }
-
-    .values-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .navbar {
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-   /* Cards dos animais */
+/* Cards dos Animais - Estilos Globais */
 .dogs-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -401,13 +372,45 @@ footer .social-icons a:hover {
     padding: 10px 20px;
     border-radius: 25px;
     cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
 }
 
 .dog-card button:hover {
     background-color: #5F3806;
 }
 
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
 
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
 
+    .about-grid {
+        flex-direction: column;
+    }
 
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .dog-card img {
+        max-width: 100%;
+    }
 }
