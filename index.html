@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Início - AMAQI Amigos dos Animais</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  
+    <nav class="navbar">
+
+        <a href="index.html" class="navbar-brand">
+
+    <img src="logo-amaqi.png"
+         alt="Logo AMAQI"
+         class="logo-navbar">
+
+    <div>
+        <strong>AMAQI</strong><br>
+        <span>Amigos dos Animais</span>
+    </div>
+
+</a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+
+    </nav>
+
+    <div class="container">
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <h1>Amigos dos Animais de Quedas do Iguaçu</h1>
+
+                <p>
+                    Resgatando vidas e encontrando lares cheios de amor.
+                    Juntos podemos mudar o destino de muitos cães e gatos
+                    desamparados.
+                </p>
+
+            </div>
+
+            <div class="hero-image">
+            </div>
+
+        </section>
+
+        <section class="action-grid">
+
+            <div class="card">
+
+                <div class="card-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <h3>Adoção</h3>
+
+                <p>
+                    Conheça nossos animais disponíveis e encontre
+                    o seu novo melhor amigo hoje mesmo.
+                </p>
+
+                <a href="#adocao" class="btn-card">
+                    Quero Adotar
+                </a>
+
+            </div>
+
+            <div class="card">
+
+                <div class="card-icon">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                </div>
+
+                <h3>Doações</h3>
+
+                <p>
+                    Ajude a manter nossos resgates e tratamentos médicos.
+                    Qualquer valor faz a diferença.
+                </p>
+
+                <a href="#doacoes" class="btn-card">
+                    Ajudar Agora
+                </a>
+
+            </div>
+
+            <div class="card">
+
+                <div class="card-icon">
+                    <i class="fa-solid fa-house-chimney-window"></i>
+                </div>
+
+                <h3>Lar Temporário</h3>
+
+                <p>
+                    Ofereça abrigo temporário e dê proteção a um animalzinho
+                    enquanto ele aguarda um lar definitivo.
+                </p>
+
+                <a href="#lar-temporario" class="btn-card">
+                    Ser Voluntário
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- ADOÇÃO -->
+
+        <section id="adocao" class="section">
+
+            <h2>Animais Disponíveis para Adoção</h2>
+
+            <div class="dogs-grid">
+
+                <div class="dog-card">
+
+                    <img src="branca.jpg" alt="Branca">
+
+                    <h3>Branca</h3>
+
+                    <p>Femea • 7 a 9 anos • Porte Grande</p>
+
+                    <button onclick="adotar('Branca')">
+                        Quero Adotar
+                    </button>
+
+                </div>
+
+                <div class="dog-card">
+
+                    <img src="bilbo.png" alt="bilbo">
+
+                    <h3>Bilbo</h3>
+
+                    <p>Macho • 8 anos • Sem uns dentinhos </p>
+
+                    <button onclick="adotar('Bilbo')">
+                        Quero Adotar
+                    </button>
+
+                </div>
+
+                <div class="dog-card">
+
+                    <img src="gato.png" alt="Sem nome">
+
+                    <h3>Sem Nome</h3>
+
+                    <p>Femea • 2 meses • </p>
+
+                    <button onclick="adotar('Bob')">
+                        Quero Adotar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- DOAÇÕES -->
+
+        <section id="doacoes" class="section">
+
+            <h2>Ajude a AMAQI</h2>
+
+            <div class="pix-box">
+
+                <h3>Faça uma Doação</h3>
+
+                <p>
+                    Sua ajuda salva vidas e mantém nossos resgates.
+                </p>
+
+                <p>
+                    PIX: 46999173407
+                </p>
+
+                <button onclick="copiarPix()">
+                    Copiar PIX
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- LAR TEMPORÁRIO -->
+
+        <section id="lar-temporario" class="section">
+
+            <h2>Lar Temporário</h2>
+
+            <p>
+                Você pode acolher um animal resgatado até ele encontrar
+                uma família definitiva.
+            </p>
+
+            <button onclick="voluntario()">
+                Quero Ser Voluntário
+            </button>
+
+        </section>
+
+    </div>
+
+    <footer>
+
+        <p>
+            &copy; 2026 AMAQI - Amigos dos Animais de Quedas do Iguaçu.
+            Todos os direitos reservados.
+        </p>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100069752322305"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/amaqi.qi/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/5546999173407"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

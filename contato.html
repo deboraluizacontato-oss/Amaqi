@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - AMAQI Amigos dos Animais</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">
+      <i class="fa-solid fa-paw"></i> AMAQI <span>• Animais</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="contato.html" class="active">Contato</a></li>
+      
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <h1>Fale Conosco</h1>
+    <p>Estamos aqui para ajudar — adoção, voluntariado ou doações</p>
+    <div class="breadcrumb">
+      <a href="index.html">Início</a>
+      <span>/</span>
+      <span>Contato</span>
+    </div>
+  </div>
+
+  <!-- CONTATO SECTION -->
+  <section>
+    <div class="container">
+      <div class="contato-grid">
+
+        <!-- INFO -->
+        <div>
+          <h2 class="section-title">Informações de Contato</h2>
+          <div class="paws-divider" style="text-align:left; margin-bottom:2rem;">🐾 🐾 🐾</div>
+
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="info-text">
+              <h4>Endereço</h4>
+              <p>Quedas do Iguaçu – Paraná, Brasil</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="info-text">
+              <h4>Telefone / WhatsApp</h4>
+              <p>(46) 99999-0000</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="info-text">
+              <h4>E-mail</h4>
+              <p>amaqi@email.com</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+            <div class="info-text">
+              <h4>Horário de Atendimento</h4>
+              <p>Segunda a Sábado: 8h às 18h</p>
+            </div>
+          </div>
+
+          <h4 style="color:var(--marrom); margin-bottom:0.5rem;">Redes Sociais</h4>
+          <div class="social-links">
+            <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+
+          <!-- Mapa placeholder -->
+          <div class="mapa">
+            <div>
+              <i class="fa-solid fa-map-location-dot"></i>
+              <p>Quedas do Iguaçu – PR</p>
+              <small>Google Maps em breve</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- FORMULÁRIO -->
+        <div class="form-card">
+          <h3>Envie uma Mensagem</h3>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nome">Seu Nome *</label>
+              <input type="text" id="nome" placeholder="João da Silva" required>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail *</label>
+              <input type="email" id="email" placeholder="seu@email.com" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="telefone">Telefone / WhatsApp</label>
+            <input type="tel" id="telefone" placeholder="(46) 99999-9999">
+          </div>
+
+          <div class="form-group">
+            <label for="assunto">Assunto *</label>
+            <select id="assunto">
+              <option value="">Selecione o assunto</option>
+              <option value="adocao">Quero Adotar um Animal</option>
+              <option value="voluntario">Quero ser Voluntário</option>
+              <option value="doacao">Quero Fazer uma Doação</option>
+              <option value="denuncia">Denúncia de Maus Tratos</option>
+              <option value="resgate">Solicitar Resgate</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem">Mensagem *</label>
+            <textarea id="mensagem" placeholder="Escreva sua mensagem aqui..." required></textarea>
+          </div>
+
+          <button type="button" class="btn-submit" onclick="enviarFormulario()">
+            <i class="fa-solid fa-paper-plane" style="margin-right:6px"></i>Enviar Mensagem
+          </button>
+
+          <div id="msg-sucesso" style="display:none; margin-top:1rem; padding:12px; background:var(--creme); border-radius:10px; color:var(--marrom); border-left:4px solid var(--dourado); font-size:0.9rem;">
+            <i class="fa-solid fa-circle-check" style="color:var(--dourado); margin-right:6px"></i>
+            Mensagem enviada com sucesso! Em breve entraremos em contato. 🐾
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3><i class="fa-solid fa-paw"></i> AMAQI</h3>
+          <p>Amigos dos Animais de Quedas do Iguaçu. Trabalhamos com amor e dedicação pelo bem-estar animal desde 2016.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Links Rápidos</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <p><i class="fa-solid fa-location-dot"></i> Quedas do Iguaçu - PR</p>
+          <p><i class="fa-solid fa-phone"></i> (46) 99999-0000</p>
+          <p><i class="fa-solid fa-envelope"></i> amaqi@email.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 AMAQI - Amigos dos Animais de Quedas do Iguaçu. Feito com 🐾 e amor.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
